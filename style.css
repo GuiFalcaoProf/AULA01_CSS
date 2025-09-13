@@ -1,0 +1,31 @@
+/* -------------------------
+   ESTRUTURA BÁSICA DO CSS
+   seletor { 
+        propriedade: valor; 
+   }
+--------------------------*/
+
+/* UTILIZANDO ID */
+#principal {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Exemplo aplicado no parágrafo do HTML */
+p {
+    font-size: 18px;
+    color: green;
+}
+
+/* Usando classe (1 seletor por vez) */
+.texto-azul {
+    color: blue;
+}
+
+/* Lista de seletores (aplica o mesmo estilo em vários elementos) */
+h3, .lista {
+    background-color: yellow;
+    padding: 5px;
+    border: 1px solid black;
+}

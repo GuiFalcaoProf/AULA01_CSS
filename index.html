@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeira Aula de CSS</title>
+
+    <!-- Ligando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!--
+        1️⃣ Class (.nome-da-classe)
+
+    Pode ser reutilizada em vários elementos na mesma página.
+
+    É indicada para agrupamentos de elementos que compartilham o mesmo estilo.
+
+    No CSS, usa-se o ponto (.) antes do nome da classe.
+
+        2️⃣ ID (#nome-do-id)
+
+    Deve ser único na página (não pode repetir).
+
+    É usado quando você quer identificar um elemento específico.
+
+    No CSS, usa-se a cerquilha (#) antes do nome do ID.
+    -->
+
+    <!--MARCANDO TAG DE PARAGRAFO COM O ID -->
+    <p id="principal">Este é o parágrafo principal da página.</p>
+
+    <!--UTILIZANDO CLASSE -->
+    <p class="destaque">Este é um parágrafo em destaque.</p>
+    <div class="destaque">Esta div também usa a mesma classe.</div>
+
+    <!-- Exemplo de CSS Inline -->
+    <h1 style="color: red;">Título com CSS Inline</h1>
+
+    <!-- Exemplo de CSS Interno -->
+    <!-- Esse exemplo será controlado pelo <style> interno no final do body -->
+
+    <h2>Título com CSS Interno</h2>
+
+    <!-- Exemplo de CSS Externo (style.css) -->
+    <p>Este parágrafo está sendo estilizado pelo CSS externo.</p>
+
+    <!-- Usando 1 seletor por vez -->
+    <p class="texto-azul">Este parágrafo usa seletor único (classe).</p>
+
+    <!-- Usando lista de seletores -->
+    <h3>Título que vai receber o mesmo estilo que outro seletor</h3>
+    <p class="lista">Este parágrafo faz parte da lista de seletores.</p>
+
+    <!-- CSS Interno incorporado no HTML -->
+    <style>
+        /* CSS interno (fica dentro do HTML) */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
 </body>
 </html>
